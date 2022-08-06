@@ -1,0 +1,5 @@
+# dev
+ipython
+django-extensions
+
+-r requirements.txt

@@ -1,0 +1,11 @@
+GET http://127.0.0.1:8000/books/
+
+###
+
+POST http://127.0.0.1:8000/books/
+Content-Type: application/json
+
+{
+  "q": "O",
+  "csrfmiddlewaretoken": "ffj2Dh1ccWzFUOjLqf7GgZCqRoSeSNQyu7eTkIGyMl3Occ4u81uhBgqBeJWOsQXO"
+}

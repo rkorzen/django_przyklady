@@ -1,0 +1,29 @@
+[
+{
+    "model": "articles.article",
+    "pk": 1,
+    "fields": {
+        "title": "Hello World",
+        "content": "xxx",
+        "author": 1
+    }
+},
+{
+    "model": "articles.author",
+    "pk": 1,
+    "fields": {
+        "first_name": "Rafał",
+        "last_name": "Korzeniewski",
+        "email": null
+    }
+},
+{
+    "model": "articles.author",
+    "pk": 2,
+    "fields": {
+        "first_name": "Adam",
+        "last_name": "Słodowy",
+        "email": null
+    }
+}
+]

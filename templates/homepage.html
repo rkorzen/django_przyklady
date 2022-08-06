@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load boosk_extras %}
+
+{% block title %}{{ block.super }} Main {% endblock %}
+
+{% block content %}
+    <h1>Homepage</h1>
+    <p>Szablon z głównego templates - ustawionego w sekcji TEMPLATES.DIRS w settings</p>
+    {{ dane }}
+
+    {% for el in dane %} {# for to jest także `tag` #}
+        <p>{{ el }}</p>
+    {% endfor %}
+
+
+
+    {{ 'jakis tekst'|upper }}
+    <br>
+    {{ 'Ala ma kota. kot ma Alę'|upper|truncatewords:"5" }}
+        <br>
+    {{ a_list|join:"-" }}
+
+    <br>
+    {{ value|default:"nothing" }}
+    <br>
+    {{ 2045 |filesizeformat }}
+
+    {% comment %}
+
+    To jest komentarz
+    {% endcomment %}
+
+    <br>
+    {{ "Ala ma KOTA"|to_lower }}
+
+    <br>
+    {{ "Ala ma KOTA"|to_lower|cut:"ala" }}
+
+    <br>
+    {% current_time %}
+    <br>
+    {{ author }}
+
+        {{ author.name }}
+{% endblock %}
